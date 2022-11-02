@@ -1,6 +1,6 @@
 {
   "name": "@zhufusheng/ckeditor5-video",
-  "version": "35.2.1",
+  "version": "35.2.2",
   "description": "Video features for CKEditor 5 (like Image features).",
   "keywords": [
     "ckeditor",
