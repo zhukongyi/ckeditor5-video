@@ -39,6 +39,9 @@ export function viewToModelStyleAttribute( styles ) {
         if ( !modelVideoElement ) {
             return;
         }
+        if ( !conversionApi.schema.checkAttribute( modelVideoElement, 'videoStyle' ) ) {
+            return;
+        }
 
         for ( const style of nonDefaultStyles[ modelVideoElement.name ] ) {
             if ( conversionApi.consumable.consume( viewElement, { classes: style.className } ) ) {
